@@ -8,6 +8,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.tools.ant.taskdefs.WaitFor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +16,8 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import factory.BrowserFactory;
@@ -126,12 +129,18 @@ public class IPageActionsImp extends ExtentReporter{
 		}
 	}
 
-	public void moveToWebElement(WebElement element) {
+	public void moveToWebElementAndClick(WebElement element) {
 		// TODO Auto-generated method stub
 		try {			
-			wait = new WebDriverWait(driver, Duration.ofSeconds(2000));
-			wait.until(ExpectedConditions.visibilityOf(element));
-			wait.until(ExpectedConditions.elementToBeClickable(element));
+//			wait = new WebDriverWait(driver, Duration.ofSeconds(2000));
+//			wait.until(ExpectedConditions.visibilityOf(element));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
+			
+			Wait<WebDriver> fWait = new FluentWait<WebDriver>(driver)
+					  .withTimeout(Duration.ofSeconds(30))
+					  .pollingEvery(Duration.ofSeconds(5))
+					  .ignoring(NoSuchElementException.class);
+			fWait.until(ExpectedConditions.visibilityOf(element));
 			Actions actions = new Actions(driver);
 			actions.moveToElement(element).click().perform();
 					
