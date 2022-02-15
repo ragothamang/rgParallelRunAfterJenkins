@@ -1,92 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-12T15:21:36 IST" name="Suite" finished-at="2022-02-12T15:21:49 IST" duration-ms="13304">
+  <suite started-at="2022-02-15T13:27:58 IST" name="Suite" finished-at="2022-02-15T13:28:52 IST" duration-ms="53998">
     <groups>
     </groups>
-    <test started-at="2022-02-12T15:21:36 IST" name="Test page object parallel" finished-at="2022-02-12T15:21:49 IST" duration-ms="13304">
+    <test started-at="2022-02-15T13:27:58 IST" name="Test page object parallel" finished-at="2022-02-15T13:28:52 IST" duration-ms="53998">
       <class name="testCases.RealTestCase001">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCases.RealTestCase001@52b1beb6]" started-at="2022-02-12T15:21:35 IST" name="beforeSuite" finished-at="2022-02-12T15:21:36 IST" duration-ms="1189" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCases.RealTestCase001@d9345cd]" started-at="2022-02-15T13:27:57 IST" name="beforeSuite" finished-at="2022-02-15T13:27:58 IST" duration-ms="876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.RealTestCase001@52b1beb6]" started-at="2022-02-12T15:21:36 IST" name="setValues" finished-at="2022-02-12T15:21:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.RealTestCase001@d9345cd]" started-at="2022-02-15T13:27:58 IST" name="setValues" finished-at="2022-02-15T13:27:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.RealTestCase001@52b1beb6]" started-at="2022-02-12T15:21:36 IST" name="beforeClass" finished-at="2022-02-12T15:21:36 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.RealTestCase001@d9345cd]" started-at="2022-02-15T13:27:58 IST" name="beforeClass" finished-at="2022-02-15T13:28:07 IST" duration-ms="8736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.RealTestCase001@52b1beb6]" started-at="2022-02-12T15:21:36 IST" name="beforeMethod" finished-at="2022-02-12T15:21:48 IST" duration-ms="11823" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.RealTestCase001@d9345cd]" started-at="2022-02-15T13:28:07 IST" name="beforeMethod" finished-at="2022-02-15T13:28:07 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="RealTestCase001_Method001()[pri:0, instance:testCases.RealTestCase001@52b1beb6]" started-at="2022-02-12T15:21:48 IST" name="RealTestCase001_Method001" finished-at="2022-02-12T15:21:48 IST" duration-ms="27" status="PASS">
+        <test-method signature="RealTestCase001_Method001()[pri:0, instance:testCases.RealTestCase001@d9345cd]" started-at="2022-02-15T13:28:07 IST" name="RealTestCase001_Method001" finished-at="2022-02-15T13:28:07 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RealTestCase001_Method001 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.RealTestCase001@52b1beb6]" started-at="2022-02-12T15:21:48 IST" name="afterMethod" finished-at="2022-02-12T15:21:49 IST" duration-ms="1351" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.RealTestCase001@d9345cd]" started-at="2022-02-15T13:28:07 IST" name="afterMethod" finished-at="2022-02-15T13:28:07 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testCases.RealTestCase001@52b1beb6]" started-at="2022-02-12T15:21:49 IST" name="afterSuite" finished-at="2022-02-12T15:21:50 IST" duration-ms="1378" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testCases.RealTestCase001@d9345cd]" started-at="2022-02-15T13:28:52 IST" name="afterSuite" finished-at="2022-02-15T13:28:54 IST" duration-ms="2310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- testCases.RealTestCase001 -->
       <class name="testCases.RealTestCase002">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.RealTestCase002@273e7444]" started-at="2022-02-12T15:21:36 IST" name="setValues" finished-at="2022-02-12T15:21:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.RealTestCase002@2d710f1a]" started-at="2022-02-15T13:27:58 IST" name="setValues" finished-at="2022-02-15T13:27:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.RealTestCase002@273e7444]" started-at="2022-02-12T15:21:36 IST" name="beforeClass" finished-at="2022-02-12T15:21:36 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.RealTestCase002@2d710f1a]" started-at="2022-02-15T13:27:58 IST" name="beforeClass" finished-at="2022-02-15T13:28:06 IST" duration-ms="8655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.RealTestCase002@273e7444]" started-at="2022-02-12T15:21:36 IST" name="beforeMethod" finished-at="2022-02-12T15:21:48 IST" duration-ms="12289" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.RealTestCase002@2d710f1a]" started-at="2022-02-15T13:28:07 IST" name="beforeMethod" finished-at="2022-02-15T13:28:07 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="RealTestCase002_Method001()[pri:0, instance:testCases.RealTestCase002@273e7444]" started-at="2022-02-12T15:21:48 IST" name="RealTestCase002_Method001" finished-at="2022-02-12T15:21:48 IST" duration-ms="3" status="PASS">
+        <test-method signature="RealTestCase002_Method001()[pri:0, instance:testCases.RealTestCase002@2d710f1a]" started-at="2022-02-15T13:28:07 IST" name="RealTestCase002_Method001" finished-at="2022-02-15T13:28:07 IST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RealTestCase002_Method001 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.RealTestCase002@273e7444]" started-at="2022-02-12T15:21:48 IST" name="afterMethod" finished-at="2022-02-12T15:21:49 IST" duration-ms="804" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at utils.ExtentReporter.reportStep(ExtentReporter.java:74)
-at uiServices.IPageActionsImp.closeAllBrowsers(IPageActionsImp.java:124)
-at hooks.AppHooks.afterMethod(AppHooks.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.RealTestCase002@2d710f1a]" started-at="2022-02-15T13:28:07 IST" name="afterMethod" finished-at="2022-02-15T13:28:07 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testCases.RealTestCase002 -->
+      <class name="testCases.LoginTestCase001">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.LoginTestCase001@29215f06]" started-at="2022-02-15T13:27:58 IST" name="setValues" finished-at="2022-02-15T13:27:58 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.LoginTestCase001@29215f06]" started-at="2022-02-15T13:28:07 IST" name="beforeClass" finished-at="2022-02-15T13:28:16 IST" duration-ms="9340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.LoginTestCase001@29215f06]" started-at="2022-02-15T13:28:16 IST" name="beforeMethod" finished-at="2022-02-15T13:28:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTestCase()[pri:0, instance:testCases.LoginTestCase001@29215f06]" started-at="2022-02-15T13:28:16 IST" name="loginTestCase" finished-at="2022-02-15T13:28:44 IST" duration-ms="28323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.LoginTestCase001@29215f06]" started-at="2022-02-15T13:28:44 IST" name="afterMethod" finished-at="2022-02-15T13:28:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.LoginTestCase001 -->
+      <class name="testCases.OpenSalesAppTestCase002">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.OpenSalesAppTestCase002@59505b48]" started-at="2022-02-15T13:27:58 IST" name="setValues" finished-at="2022-02-15T13:27:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.OpenSalesAppTestCase002@59505b48]" started-at="2022-02-15T13:28:07 IST" name="beforeClass" finished-at="2022-02-15T13:28:16 IST" duration-ms="9225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.OpenSalesAppTestCase002@59505b48]" started-at="2022-02-15T13:28:16 IST" name="beforeMethod" finished-at="2022-02-15T13:28:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTestCase()[pri:0, instance:testCases.OpenSalesAppTestCase002@59505b48]" started-at="2022-02-15T13:28:16 IST" name="loginTestCase" finished-at="2022-02-15T13:28:52 IST" duration-ms="35858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.OpenSalesAppTestCase002@59505b48]" started-at="2022-02-15T13:28:52 IST" name="afterMethod" finished-at="2022-02-15T13:28:52 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.OpenSalesAppTestCase002 -->
     </test> <!-- Test page object parallel -->
   </suite> <!-- Suite -->
 </testng-results>

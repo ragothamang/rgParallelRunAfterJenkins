@@ -3,17 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="Test page object parallel(failed)">
     <classes>
-      <class name="testCases.RealTestCase002">
-        <methods>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-          <include name="afterMethod"/>
-          <include name="RealTestCase002_Method001"/>
-          <include name="beforeClass"/>
-          <include name="setValues"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- testCases.RealTestCase002 -->
       <class name="testCases.RealTestCase001">
         <methods>
           <include name="beforeSuite"/>
