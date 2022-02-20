@@ -27,8 +27,6 @@ public class OpenSalesAppTestCase002 extends AppHooks{
 		.clickLoginButton()
 		.clickOnWaffleIcon()
 		.clickOnAppSearchBox()
-		.searchApp();
-		
+		.searchApp();		
 	}
-
 }

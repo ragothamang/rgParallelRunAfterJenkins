@@ -25,7 +25,7 @@
                         <parallel>classes</parallel>
                         <threadCount>2</threadCount>
 				 		 <suiteXmlFiles>
-	            			<suiteXmlFile>testng.xml</suiteXmlFile>
+	            			<suiteXmlFile>testngParallelClass.xml</suiteXmlFile>
 	          			</suiteXmlFiles>
             			<perCoreThreadCount>false</perCoreThreadCount>
                     </configuration>
@@ -137,6 +137,10 @@
     <artifactId>gherkin</artifactId>
     <version>22.0.0</version>
 </dependency>
-
+<dependency>
+  <groupId>org.projectlombok</groupId>
+  <artifactId>lombok</artifactId>
+  <version>1.18.20</version>
+</dependency>
 	</dependencies>
 </project>

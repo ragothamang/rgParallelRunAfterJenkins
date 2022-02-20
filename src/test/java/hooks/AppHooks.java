@@ -69,7 +69,7 @@ public class AppHooks extends IPageActionsImp{
 	public void afterMethod() {
 //		DriverFactory.getInstance().closeBrowser();
 //		tlDriver.get().close();		
-//		closeAllBrowsers();
+		closeAllBrowsers();
 		
 		tlDriver.remove();
 	}
