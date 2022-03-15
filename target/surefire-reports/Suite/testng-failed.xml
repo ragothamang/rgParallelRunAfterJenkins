@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="retry.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="2" parallel="classes" name="Test page object parallel(failed)" verbose="0">
+    <classes>
+      <class name="testCases.OpenSalesAppTestCase001">
+        <methods>
+          <include name="loginTestCase"/>
+          <include name="beforeSuite"/>
+          <include name="setValues"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.OpenSalesAppTestCase001 -->
+    </classes>
+  </test> <!-- Test page object parallel(failed) -->
+</suite> <!-- Failed suite [Suite] -->

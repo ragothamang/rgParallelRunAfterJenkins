@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" >	
-	<test thread-count="2" name="Test page object parallel" parallel="classes" >
-	<!-- <test thread-count="5" name="Test page object parallel" > -->
-		<classes>			
+<suite name="Suite">
+	<listeners>
+		<listener class-name="retry.AnnotationTransformer"></listener>
+	</listeners>
+	<test thread-count="2" name="Test page object parallel"
+		parallel="classes">
+		<!-- <test thread-count="5" name="Test page object parallel" > -->
+		<classes>
 			<class name="testCases.RealTestCase001" />
 			<class name="testCases.RealTestCase002" />
 			<class name="testCases.LoginTestCase001" />
-			<class name="testCases.OpenSalesAppTestCase002" />
+			<class name="testCases.OpenSalesAppTestCase001" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

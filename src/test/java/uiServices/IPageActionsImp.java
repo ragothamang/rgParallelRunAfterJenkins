@@ -150,6 +150,17 @@ public class IPageActionsImp extends ExtentReporter{
 		}
 	}
 	
+	public void verifyElementText(WebElement element, String expectedElementText) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(2000));
+		wait.until(ExpectedConditions.visibilityOf(element));
+		String actualText = element.getText();
+		System.out.println("actual text--> "+ actualText );
+		if(expectedElementText.equals(actualText)) {
+			reportStep("The Element text is verified :"+element, "PASS", takeSnap());
+		}else {
+			reportStep("The Element text expected and actual mis-matched :"+element, "FAIL", takeSnap());
+		}
+	}
 	
 	
 	

@@ -23,4 +23,9 @@ public class HomePage extends AppHooks{
 		type(locateWebElement("xpath","//input[@type='search' and @placeholder='Search apps and items...']"), "Sales");
 		return this;
 	}
+	
+	public SalesAppHomePage selectSalesApp() throws InterruptedException {		
+		moveToWebElementAndClick(locateWebElement("xpath","(//p//following::b[contains(text(),'Sales')])[2]"));
+		return new SalesAppHomePage(this.driver);
+	}
 }

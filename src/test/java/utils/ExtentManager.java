@@ -13,7 +13,8 @@ public class ExtentManager {
     public synchronized static ExtentReports getReporter() throws IOException {
         if (extent == null) {
         	htmlReporter = new ExtentSparkReporter("./reports/extentReport.html");
-    		htmlReporter.loadXMLConfig("./src/test/resources/extent-config.xml");
+        	htmlReporter.loadXMLConfig("./src/test/resources/extent-config.xml");
+//    		htmlReporter.loadXMLConfig("./seleniumParallelRun/resources/extent-config.xml");
             extent = new ExtentReports();            		
         }
         

@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 4,674.002 s <<< FAILURE! - in TestSuite
+testCases.RealTestCase002.afterMethod  Time elapsed: 16.633 s  <<< FAILURE!
+java.lang.RuntimeException
+
+testCases.OpenSalesAppTestCase001.loginTestCase  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testCases.OpenSalesAppTestCase001.loginTestCase(OpenSalesAppTestCase001.java:34)
+

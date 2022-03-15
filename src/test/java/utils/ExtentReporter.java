@@ -32,7 +32,10 @@ public abstract class ExtentReporter {
 	public synchronized void startReport() throws IOException {
 		
 		htmlReporter = new ExtentSparkReporter("./reports/extentReport.html");
-		htmlReporter.loadXMLConfig("./src/test/resources/extent-config.xml");
+//		htmlReporter.loadXMLConfig(".//extent-config.xml");
+		htmlReporter.loadXMLConfig("./src/test/resources/extent-config.xml"); // commented for jar way execution
+//		htmlReporter.loadXMLConfig("./seleniumParallelRun/resources/extent-config.xml");
+//		htmlReporter.loadXMLConfig("./resources/extent-config.xml");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 		

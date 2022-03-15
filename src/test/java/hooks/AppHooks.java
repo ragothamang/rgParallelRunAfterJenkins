@@ -3,6 +3,8 @@ package hooks;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
+import org.testng.ITestNGMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -13,6 +15,7 @@ import factory.BrowserFactory;
 import factory.DriverFactory;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
+import retry.RetryFailedTests;
 import uiServices.IPageActionsImp;
 import utils.ExtentManager;
 import utils.ExtentTestManager;
@@ -22,9 +25,17 @@ public class AppHooks extends IPageActionsImp{
 	public  static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 	public WebDriver wdDriver = null;
 	
+	
+	private void setCustomRetryAnalyzer(ITestContext testsContext) {
+        for (ITestNGMethod method : testsContext.getAllTestMethods()) {
+            method.setRetryAnalyzerClass(RetryFailedTests.class);
+        }
+    }
+	
 	@BeforeSuite(groups = { "All" })
 	public void beforeSuite() throws IOException {
 		startReport();		
+//		setCustomRetryAnalyzer(testsContext);
 //		 ExtentManager.createInstance(fileName);	       
 	}
 
@@ -38,6 +49,7 @@ public class AppHooks extends IPageActionsImp{
 		BrowserFactory bf = new BrowserFactory();
 		tlDriver.set(bf.getChromeDriverInstance());
 		wdDriver = tlDriver.get();
+		
 		wdDriver.get("http://login.salesforce.com");
 		
 	}
@@ -54,8 +66,8 @@ public class AppHooks extends IPageActionsImp{
 		tlExtentTestTestStep.get().assignAuthor(authors);
 		tlExtentTestTestStep.get().assignCategory(category);
 	 
-//		testStep.assignAuthor(authors);
-//		testStep.assignCategory(category);	 
+		testStep.assignAuthor(authors);
+		testStep.assignCategory(category);	 
 //		startApp("chrome");
 		
 		

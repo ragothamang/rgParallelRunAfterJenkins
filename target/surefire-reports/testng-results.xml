@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="3" ignored="6" total="13" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-15T07:27:07 IST" name="Suite" finished-at="2022-03-15T08:44:58 IST" duration-ms="4671039">
+    <groups>
+    </groups>
+    <test started-at="2022-03-15T07:27:07 IST" name="Test page object parallel" finished-at="2022-03-15T08:44:58 IST" duration-ms="4671039">
+      <class name="testCases.RealTestCase001">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCases.RealTestCase001@28f3b248]" started-at="2022-03-15T07:27:06 IST" name="beforeSuite" finished-at="2022-03-15T07:27:07 IST" duration-ms="883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.RealTestCase001@28f3b248]" started-at="2022-03-15T07:27:07 IST" name="setValues" finished-at="2022-03-15T07:27:07 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.RealTestCase001@28f3b248]" started-at="2022-03-15T07:27:07 IST" name="beforeClass" finished-at="2022-03-15T07:27:33 IST" duration-ms="26206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.RealTestCase001@28f3b248]" started-at="2022-03-15T07:27:33 IST" name="beforeMethod" finished-at="2022-03-15T07:27:33 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="RealTestCase001_Method001()[pri:0, instance:testCases.RealTestCase001@28f3b248]" started-at="2022-03-15T07:27:33 IST" name="RealTestCase001_Method001" finished-at="2022-03-15T07:27:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RealTestCase001_Method001 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.RealTestCase001@28f3b248]" started-at="2022-03-15T07:27:33 IST" name="afterMethod" finished-at="2022-03-15T08:43:03 IST" duration-ms="4529690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testCases.RealTestCase001@28f3b248]" started-at="2022-03-15T08:44:58 IST" name="afterSuite" finished-at="2022-03-15T08:44:59 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testCases.RealTestCase001 -->
+      <class name="testCases.RealTestCase002">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.RealTestCase002@1b1426f4]" started-at="2022-03-15T07:27:07 IST" name="setValues" finished-at="2022-03-15T07:27:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.RealTestCase002@1b1426f4]" started-at="2022-03-15T07:27:07 IST" name="beforeClass" finished-at="2022-03-15T07:27:32 IST" duration-ms="24733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.RealTestCase002@1b1426f4]" started-at="2022-03-15T07:27:32 IST" name="beforeMethod" finished-at="2022-03-15T07:27:32 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="RealTestCase002_Method001()[pri:0, instance:testCases.RealTestCase002@1b1426f4]" started-at="2022-03-15T07:27:32 IST" name="RealTestCase002_Method001" finished-at="2022-03-15T07:27:32 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RealTestCase002_Method001 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.RealTestCase002@1b1426f4]" started-at="2022-03-15T07:27:32 IST" name="afterMethod" finished-at="2022-03-15T07:27:49 IST" duration-ms="16989" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException
+at utils.ExtentReporter.reportStep(ExtentReporter.java:118)
+at uiServices.IPageActionsImp.closeAllBrowsers(IPageActionsImp.java:188)
+at hooks.AppHooks.afterMethod(AppHooks.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.RealTestCase002 -->
+      <class name="testCases.OpenSalesAppTestCase001">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T07:27:07 IST" name="setValues" finished-at="2022-03-15T07:27:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:43:03 IST" name="beforeClass" finished-at="2022-03-15T08:43:30 IST" duration-ms="27321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:43:30 IST" name="beforeMethod" finished-at="2022-03-15T08:43:30 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="loginTestCase()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:43:30 IST" name="loginTestCase" finished-at="2022-03-15T08:44:57 IST" duration-ms="86525" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+at uiServices.IPageActionsImp.verifyElementText(IPageActionsImp.java:155)
+at pages.SalesAppHomePage.verify_SalesApp_Landing_Page(SalesAppHomePage.java:18)
+at testCases.OpenSalesAppTestCase001.loginTestCase(OpenSalesAppTestCase001.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:44:57 IST" name="afterMethod" finished-at="2022-03-15T08:44:58 IST" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:44:58 IST" name="beforeMethod" finished-at="2022-03-15T08:44:58 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="loginTestCase()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:44:58 IST" name="loginTestCase" finished-at="2022-03-15T08:44:58 IST" duration-ms="25" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+at uiServices.IPageActionsImp.verifyElementText(IPageActionsImp.java:155)
+at pages.SalesAppHomePage.verify_SalesApp_Landing_Page(SalesAppHomePage.java:18)
+at testCases.OpenSalesAppTestCase001.loginTestCase(OpenSalesAppTestCase001.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:44:58 IST" name="afterMethod" finished-at="2022-03-15T08:44:58 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method retried="true" signature="loginTestCase()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:44:58 IST" name="loginTestCase" finished-at="2022-03-15T08:44:58 IST" duration-ms="12" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+at uiServices.IPageActionsImp.verifyElementText(IPageActionsImp.java:155)
+at pages.SalesAppHomePage.verify_SalesApp_Landing_Page(SalesAppHomePage.java:18)
+at testCases.OpenSalesAppTestCase001.loginTestCase(OpenSalesAppTestCase001.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:44:58 IST" name="beforeMethod" finished-at="2022-03-15T08:44:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:44:58 IST" name="afterMethod" finished-at="2022-03-15T08:44:58 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:44:58 IST" name="beforeMethod" finished-at="2022-03-15T08:44:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTestCase()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:44:58 IST" name="loginTestCase" finished-at="2022-03-15T08:44:58 IST" duration-ms="12" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+at uiServices.IPageActionsImp.verifyElementText(IPageActionsImp.java:155)
+at pages.SalesAppHomePage.verify_SalesApp_Landing_Page(SalesAppHomePage.java:18)
+at testCases.OpenSalesAppTestCase001.loginTestCase(OpenSalesAppTestCase001.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.OpenSalesAppTestCase001@581ac8a8]" started-at="2022-03-15T08:44:58 IST" name="afterMethod" finished-at="2022-03-15T08:44:58 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.OpenSalesAppTestCase001 -->
+      <class name="testCases.LoginTestCase001">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.LoginTestCase001@32b260fa]" started-at="2022-03-15T07:27:07 IST" name="setValues" finished-at="2022-03-15T07:27:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.LoginTestCase001@32b260fa]" started-at="2022-03-15T07:27:50 IST" name="beforeClass" finished-at="2022-03-15T08:43:25 IST" duration-ms="4534234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.LoginTestCase001@32b260fa]" started-at="2022-03-15T08:43:25 IST" name="beforeMethod" finished-at="2022-03-15T08:43:25 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTestCase()[pri:0, instance:testCases.LoginTestCase001@32b260fa]" started-at="2022-03-15T08:43:25 IST" name="loginTestCase" finished-at="2022-03-15T08:43:53 IST" duration-ms="28787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.LoginTestCase001@32b260fa]" started-at="2022-03-15T08:43:53 IST" name="afterMethod" finished-at="2022-03-15T08:43:55 IST" duration-ms="2078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.LoginTestCase001 -->
+    </test> <!-- Test page object parallel -->
+  </suite> <!-- Suite -->
+</testng-results>
